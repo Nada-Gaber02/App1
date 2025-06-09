@@ -1,0 +1,207 @@
+:root{
+    --primColor : #2C3E50;
+    --secondColor : #1ABC9C;
+    --footerEndColor : #1A252F;
+}
+
+nav{
+    background-color: var(--primColor) !important;
+    transition: padding 0.3s;
+    padding: 25px !important;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff !important;
+    text-decoration: none;
+}
+a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.nav-item{
+    font-weight: 700;
+}
+.active{
+    background-color: #1ABC9C !important;
+    padding: 10px;
+    border-radius: 10px;
+}
+.navbar-small {
+    padding: 10px !important;
+}
+
+.homePage{
+    background-color: var(--secondColor);
+    height: 95vh;
+}
+
+.homeContent h2{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+.w-18{
+    width:18%;
+}
+.homeContent img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line{
+    background-color: #fff;
+    width: 5%;
+    height: 4px;
+}
+.star i{
+    color: #fff;
+}
+.line-p{
+    background-color: var(--primColor);
+    width: 8%;
+    height: 4px;
+}
+.star-p i{
+    color: var(--primColor);
+}
+.aboutPage{
+    background-color: var(--secondColor);
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutPage h2{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+.portfolio-header h2{
+    font-size: 40px;
+    color:  var(--primColor);
+    font-weight: 700;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondColor);
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s ;
+}
+.layer i {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 700;
+}
+.port:hover .layer{
+    opacity: 0.8;
+}
+.displayImg{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #4a77b553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.contactPage h2{
+    font-size: 40px;
+    color:  var(--primColor);
+    font-weight: 700;
+}
+.contactBox{
+    width: 55%;
+    margin: auto;
+}
+.form-control{
+    border: 0  !important;
+    border-bottom: 1px solid #ccc !important;
+    box-shadow: none !important;
+}
+.contactBtn{
+    background-color: var(--secondColor);
+    padding: 10px  15px;
+    border: 1px solid var(--secondColor);
+    border-radius: 10px;
+    color: #fff;
+}
+.footer{
+    background-color: var(--primColor);
+}
+.footer h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+}
+.socialMedia{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.socialMedia i{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
+.footer-end{
+    background-color: var(--footerEndColor);
+}
+
+@media screen and (max-width: 768px) {
+    .homePage{
+        height: 100vh;
+    }
+    .homeContent h2{
+        font-size: 25px;
+    }
+    .logo{
+    font-size: 25px;
+    }
+    .w-18{
+        width: 100%;
+    }
+    .portfolio-header h2{
+        font-size: 30px;
+    }
+    .aboutPage h2{
+        font-size: 30px;
+    }
+    .contactPage h2{
+        font-size: 30px;
+    }
+    .contactBox{
+        width: 90%;
+    }
+    .line{
+    width: 25%;
+    }
+    .line-p{
+        width: 15%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .homePage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .homeContent {
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
+    .w-18{
+        width: 90%;
+    }
+}
