@@ -10,7 +10,7 @@ const basename = import.meta.env.PROD ? '/app1-project' : '/';
 
 function App() {
   let route = createBrowserRouter([
-    {path: '',element: <FirstPage />,children:[ 
+    {path: '/',element: <FirstPage />,children:[ 
         { path: '', element: <Home /> },
         { path: 'About', element: <About /> },
         { path: 'Portfolio', element: <Portfolio /> },
