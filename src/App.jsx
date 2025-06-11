@@ -7,7 +7,7 @@ import Contact from './Contact/Contact'
 import { createBrowserRouter , RouterProvider , createHashRouter } from 'react-router-dom'
 
 function App() {
-  let route = createBrowserRouter([
+  let route = createHashRouter([
     {path: '',element: <FirstPage />,children:[ 
         { path: '', element: <Home /> },
         { path: 'About', element: <About /> },
@@ -16,7 +16,7 @@ function App() {
       ]
     }
   ],
-  { basename: '/App1' }
+  { basename: '/' }
 )
   return (
     <>

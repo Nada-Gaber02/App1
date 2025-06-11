@@ -20,7 +20,7 @@ export default function Navbar() {
   return <>
   <nav className={`navbar navbar-expand-lg position-fixed z-3 w-100 ${scrolled ? 'navbar-small' : ''}`}>
   <div className="container">
-    <Link to='/' className='logo'>START FRAMWORK</Link>
+    <Link to='' className='logo'>START FRAMWORK</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
