@@ -15,7 +15,9 @@ function App() {
         { path: 'Contact', element: <Contact /> }
       ]
     }
-  ])
+  ],
+  { basename: '/App1' }
+)
   return (
     <>
       <RouterProvider router={route} />
