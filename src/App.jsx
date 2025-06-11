@@ -6,16 +6,20 @@ import Portfolio from './Portfolio/Portfolio'
 import Contact from './Contact/Contact'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 
+const basename = import.meta.env.PROD ? '/app1-project' : '/';
+
 function App() {
   let route = createBrowserRouter([
-    {path: '/',element: <FirstPage />,children:[ 
-        { path: '/', element: <Home /> },
-        { path: '/About', element: <About /> },
-        { path: '/Portfolio', element: <Portfolio /> },
-        { path: '/Contact', element: <Contact /> }
+    {path: '',element: <FirstPage />,children:[ 
+        { path: '', element: <Home /> },
+        { path: 'About', element: <About /> },
+        { path: 'Portfolio', element: <Portfolio /> },
+        { path: 'Contact', element: <Contact /> }
       ]
     }
-  ])
+  ],
+  basename
+)
   return (
     <>
       <RouterProvider router={route} />
